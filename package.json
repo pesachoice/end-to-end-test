@@ -1,0 +1,20 @@
+{
+  "name": "testcafe-testing",
+  "version": "1.0.0",
+  "description": "Automated testing with TestCafe",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome ./PesaChoiseTestAssessment"
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "Josiane",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.3.2",
+    "testcafe": "^1.15.1"
+  }
+}
