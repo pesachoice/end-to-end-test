@@ -24,11 +24,8 @@ test('User should be able to Login to dev usemidas website', async t =>{
     await t.click(LoginElement)
     await t.click('.active-tab')
     await t.click(myAccountElement)
-    await(7000)
-    await t.setTestSpeed(0.1)
     await t.click(singOutIconElement)
     await t.click(Selector(SignoutDropdownElement).withText('Sign Out'))
-
 })
     //Admin Login
 test('Admin should be able to Login to dev usemidas website', async t =>{
@@ -49,16 +46,11 @@ test('Admin should be able to Login to dev usemidas website', async t =>{
     await t.click('#company_permission')
     await t.click(EmployeeCategory)
     await t.click(EmployeeListPermission)
-    await t.setTestSpeed(0.1)
     await t.click(checkbox1)
     await t.click(checkbox2)
-    await t.setTestSpeed(0.1)
-    await t.setTestSpeed(0.1)
     await t.click('#dropdown-item-button')
-    await t.click(Selector('.dropdown-item').withText('Sign Out'))
-    
+    await t.click(Selector('.dropdown-item').withText('Sign Out'))   
 })
-
 test('Admin should be able to Login as a user and check if the user is able to see /his/her identification info', async t =>{
     await t.navigateTo(`${usedmisPage}`);
 
